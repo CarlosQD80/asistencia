@@ -18,6 +18,8 @@ export default function Home() {
         });
         if (response.ok) {
             // Handle success
+            setNombres("");
+            setApellidos("");
         } else {
             // Handle error
         }
