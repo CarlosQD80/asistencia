@@ -9,7 +9,7 @@ export default function Home() {
         const fetchMiembros = async () => {
             const response = await fetch('/api/miembros');
             const data = await response.json();
-            setMiembros(data);
+            setMiembros(Array.isArray(data) ? data : []);
         };
 
         fetchMiembros();
