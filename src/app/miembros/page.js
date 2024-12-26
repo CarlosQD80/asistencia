@@ -11,7 +11,6 @@ export default function Home() {
             const data = await response.json();
             setMiembros(Array.isArray(data) ? data : []);
         };
-
         fetchMiembros();
     }, []);
 
